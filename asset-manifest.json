@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kart/static/css/main.4641c9af.css",
-    "main.js": "/kart/static/js/main.8319ccfc.js",
+    "main.js": "/kart/static/js/main.e17df727.js",
     "static/js/453.a6bb5ef0.chunk.js": "/kart/static/js/453.a6bb5ef0.chunk.js",
     "index.html": "/kart/index.html",
     "main.4641c9af.css.map": "/kart/static/css/main.4641c9af.css.map",
-    "main.8319ccfc.js.map": "/kart/static/js/main.8319ccfc.js.map",
+    "main.e17df727.js.map": "/kart/static/js/main.e17df727.js.map",
     "453.a6bb5ef0.chunk.js.map": "/kart/static/js/453.a6bb5ef0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4641c9af.css",
-    "static/js/main.8319ccfc.js"
+    "static/js/main.e17df727.js"
   ]
 }
