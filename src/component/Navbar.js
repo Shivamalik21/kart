@@ -4,7 +4,8 @@ import Badge from '@mui/material/Badge';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-const Navbar = ({quantity}) => {
+const Navbar = ({quantity,value}) => {
+  if(value==="true"){
   return (
     <div id="nav" style={{height:"5vw",borderBottom:"1px solid grey", backgroundColor:"blue"}}>
        <IconButton aria-label="cart">
@@ -14,6 +15,7 @@ const Navbar = ({quantity}) => {
 </IconButton>
     </div>
   )
+}
 }
 
 export default Navbar

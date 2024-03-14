@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 
-const Cart = ({prop,setQuantity,quantity}) => {
+const Cart = ({prop,setQuantity,quantity,value,setvalue}) => {
   const[data,setdata]=useState(prop)
   const[total,setTotal]=useState(0)
+ 
    
     function inecrease(e){
   const dt=data.map((arr,index)=>{
@@ -44,14 +45,15 @@ function remove(e){
 
 }
 function cleardata(){
-  
+  setvalue("false")
     setdata([]);
     setTotal(0);
     setQuantity(0);
   
 }
-
+if(value==="true"){
   return (
+    
   <div>
     
       {data.map((e,index)=>{
@@ -85,7 +87,16 @@ function cleardata(){
     <div>Total:{total}</div>
     </div>
   </div>
+  
   )
+}else{
+  return(
+  <div style={{textAlign:"center", marginTop:"10%",}}>
+    <h1 style={{fontSize:"50px"}}>Your Bag </h1>
+    <p>is currently empty...</p>
+  </div>
+  )
+}
 }
 
 export default Cart

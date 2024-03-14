@@ -26,13 +26,13 @@ let arr=[{
 },
 ]
 const [quantity, setQuantity] = useState(0)
-
+const[value,setvalue]=useState("true")
 
   return (
     <div className="App">
-      <Navbar quantity={quantity}/>
+      <Navbar quantity={quantity} value={value}/>
       <Cart prop={arr} setQuantity={setQuantity}
-        quantity={quantity}/>
+        quantity={quantity} value={value} setvalue={setvalue}/>
     </div>
   );
 }
