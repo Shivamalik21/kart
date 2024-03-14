@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const Cart = ({prop,setQuantity,quantity,value,setvalue}) => {
   const[data,setdata]=useState(prop)
   const[total,setTotal]=useState(0)
@@ -51,7 +52,7 @@ function cleardata(){
     setQuantity(0);
   
 }
-if(value==="true"||data!=="q"){
+if(value==="true"){
   return (
     
   <div>
@@ -68,13 +69,15 @@ if(value==="true"||data!=="q"){
        </div>
       </div>
       <div id="btn">
-      <button onClick={()=>{
+      <KeyboardArrowUpIcon onClick={()=>{
         inecrease(index)
-      }}>add</button>
+      }}
+      
+        style={{color:"blue",cursor:"pointer"}}  />
       <p>{e.quantity}</p>
-      <button onClick={()=>{
+      <ExpandMoreIcon onClick={()=>{
         decrease(index)
-      }}>sub</button>
+      }} style={{color:"blue", cursor:"pointer"}}/>
       </div>
      </div>
         )
@@ -87,8 +90,9 @@ if(value==="true"||data!=="q"){
     <div>Total:{total}</div>
     </div>
   </div>
-  
+ 
   )
+ 
 }else{
   return(
   <div style={{textAlign:"center", marginTop:"10%",}}>
@@ -96,6 +100,7 @@ if(value==="true"||data!=="q"){
     <p>is currently empty...</p>
   </div>
   )
+
 }
 }
 
