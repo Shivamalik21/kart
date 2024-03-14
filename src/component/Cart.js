@@ -57,7 +57,7 @@ function cleardata(){
       {data.map((e,index)=>{
         return(
      <div id="list" key={index}>
-     <div id="kt"><div style={{width:"10vw", border:"1px solid red", overflow:"hidden", height:"10vw",marginRight:"1vw"}}><img src={e.Image} style={{width:"100%", height:"100%"}}></img></div>
+     <div id="kt"><div style={{width:"10vw",  overflow:"hidden", height:"10vw",marginRight:"1vw"}}><img src={e.Image} style={{width:"100%", height:"100%"}}></img></div>
      <div><p>{e.name}</p>
         <p>Price: {e.price}</p>
         <button onClick={()=>{
