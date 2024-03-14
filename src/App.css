@@ -1,6 +1,3 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +32,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+#list{
+  margin-top: 4vw;
+  margin-bottom: 3vw;
+  display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+
+#btn {
+  text-align: center;
+}
+#kt{
+  display: flex;
+ font-weight: bold;
+ text-align: start;
+  width: 20vw;
+  
+}
+#kt button{
+  border: none;
+  background-color:white;
+  color: blue;
+}
+
+#kt button:hover{
+  color: red;
+  cursor: pointer;
+}
+#last{
+  display: flex;
+ justify-content: flex-end;
+width: 81%;
+font-size: 20px;
+}
+#last button{
+  margin-right: 30vw;
+  width: 5vw;
+  font-size: 25px;
+  background-color: rgb(6, 160, 221);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+hr{
+  margin: 5% 5% 3% 5%;
+}
+#nav{
+ display: flex;
+ align-items: center;
+ padding-left: 80%;
 }
