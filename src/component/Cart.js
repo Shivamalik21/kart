@@ -51,7 +51,7 @@ function cleardata(){
     setQuantity(0);
   
 }
-if(value==="true"){
+if(value==="true"||data!=="q"){
   return (
     
   <div>
